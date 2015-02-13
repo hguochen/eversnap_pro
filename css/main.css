@@ -267,14 +267,15 @@ textarea {
 /* ==========================================================================
    Navigation bar
    ========================================================================== */
+.nav {
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
 .nav a {
     color: #5a5a5a;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: bold;
-    padding-top: 14px;   
-    padding-bottom: 14px; 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 14px 10px;
     text-transform: uppercase;
 }
 
@@ -286,8 +287,30 @@ textarea {
     background-image: url('http://goo.gl/04j7Nn');
 }
 .jumbotron p {
-    color: white;
+    color: #fff;
+    font-size: 20px;
 }
 .jumbotron .punchline {
-    color: white;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Shift', san-serif;
+}
+
+.portfolio, .ph-team, .package {
+    background-color: #f7f7f7;
+}
+
+.portfolio h3, .ph-team h3, .package h3 {
+    font-family: 'Shift', san-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    color: #00b0ff;
+}
+
+.nav li {
+    display: inline;
 }

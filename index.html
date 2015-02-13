@@ -11,8 +11,9 @@
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
         <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,10 +24,10 @@
 
         <div class="nav">
             <div class="container-fluid">
-                <ul>
+                <ul class="pull-left">
                     <li><a href="#">LOGO</a></li>
                 </ul>
-                <ul>
+                <ul class="pull-right">
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
@@ -51,45 +52,69 @@
         </div>
         <div class="portfolio">
             <div class="container-fluid">
-                <h3>Portfolio</h3>
-                <ul>
-                    <li>Birthdays, Anniversaries &amp; Personal Events</li>
-                    <li>Company events &amp; conferences</li>
-                    <li>Engagements, Proposals &amp; wedding related events</li>
-                    <li>Portraits &amp; headshots</li>
-                    <li>Schoold &amp; universities</li>
-                    <li>Real Estate</li>
-                </ul>
+                <div class="row">
+                    <h3 class="col-md-12">Portfolio</h3>
+                    <div class="col-md-4">
+                        <p>Birthdays, Anniversaries &amp; Personal Events</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Company events &amp; conferences</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Engagements, Proposals &amp; wedding related events</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Portraits &amp; headshots</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Schools &amp; universities</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Real Estate</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ph-team">
             <div class="container-fluid">
-                <h3>Photography team</h3>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <div class="row">
+                    <h3 class="col-md-12">Photography team</h3>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
         <div class="package">
             <div class="container-fluid">
-                <h3>Package</h3>
-                <ul>
-                    <li>3 days or less delivery</li>
-                    <li>All rights included</li>
-                    <li>Collect all guest photos too</li>
-                    <li>Download photos or order prints</li>
-                    <li>raw video clips included</li>
-                    <li>Live slideshow of photos</li>
-                </ul>
-                <button>Buy now</button>
+                <div class="row">
+                    <h3 class="col-md-12">Package</h3>
+                    <div class="col-md-4">
+                        <p>3 days or less delivery</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>All rights included</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Collect all guest photos</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Download photos or order prints</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Raw video clips included</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Live slideshow of photos</p>
+                    </div>
+                    <button>ORDER NOW</button>
+                </div>
             </div>
         </div>
         <footer class="container-fluid">
             &copy; Eversnap Inc
         </footer>
-        
-
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
