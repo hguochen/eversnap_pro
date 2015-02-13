@@ -268,8 +268,11 @@ textarea {
    Navigation bar
    ========================================================================== */
 .nav {
-    padding-top: 14px;
-    padding-bottom: 6px;
+    padding-top: 14px;    
+}
+
+.nav-list {
+    padding-top: 8px;
 }
 .nav a {
     color: #5a5a5a;
@@ -294,7 +297,7 @@ html, body {
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
-    background-image: url('http://www.minimit.com/images/picjumbo.com_DSC_3274.jpg');
+    background-image: url('http://i.imgur.com/4NccECG.jpg');
 }
 .jumbotron p {
     color: #fff;
@@ -342,7 +345,11 @@ html, body {
 .ph-team {
     background-color: #fff;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.ph-team img {
+    padding-bottom: 15px;
 }
 
 .package {    
@@ -366,8 +373,15 @@ a {
 }
 
 .footer {
+    color: #fff;    
+    background-color: #669900;
     text-align: center;
 }
+
+.footer a {
+    color: #eee;
+}
+
 .footer li {
     display: block;
     text-align: center;
@@ -375,4 +389,10 @@ a {
 
 .footer ul {
     padding-right: 40px;
+}
+
+.copyright {
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
