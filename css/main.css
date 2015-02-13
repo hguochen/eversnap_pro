@@ -334,6 +334,10 @@ html, body {
     border-bottom: 1px solid #dbdbdb;
 }
 
+.portfolio p {
+    text-align: center;
+}
+
 .portfolio h3, .ph-team h3, .package h3, footer h3 {
     color: #393c3d;
     font-size: 24px;
@@ -355,6 +359,11 @@ html, body {
 .package {    
     padding-bottom: 50px;
 }
+
+.package p {
+    text-align: center;
+}
+
 a {
     color: #00b0ff;
 }
