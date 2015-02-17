@@ -298,7 +298,8 @@ html, body {
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
-    background-image: url('http://www.minimit.com/images/picjumbo.com_DSC_3274.jpg');
+    background-image: url('http://olindaschool.com.br/conteudo/uploads/2014/10/cameras.jpg');
+    opacity: 0.9;
 }
 .jumbotron p {
     color: #fff;
@@ -420,4 +421,9 @@ a {
 .modal-footer button {
     margin-left: auto;
     margin-right: auto;
+}
+
+.check-date, .order {
+    background-color: #669900;
+    border: 0;
 }
