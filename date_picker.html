@@ -11,6 +11,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
         <style>
             body {
                 padding-top: 40px;
@@ -62,7 +63,7 @@
                         <div class="form-section">
                             <div class="row">
                                 <form role="form">
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="sr-only" for="location">Location</label>
                                             <input type="email" class="form-control" id="location" placeholder="Where?">
@@ -88,11 +89,20 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            <label for="">CONTINUE HERE</label>
+                                            <label for="type" class="sr-only">Type</label>
+                                            <select name="type" id="type" class="form-control">
+                                                <option value="Kids party">Kids party</option>
+                                                <option value="Adults party">Adults party</option>
+                                                <option value="Event">Event</option>
+                                                <option value="Conference">Conference</option>
+                                                <option value="Wedding">Wedding</option>
+                                                <option value="Portraits">Portraits</option>
+                                                <option value="Headshots">Headshots</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-1">
-                                        
+                                    <div class="col-md-12 cta">
+                                        <button class="btn btn-success btn-lg check-date" data-toggle="modal" data-target="#success">Check availability</button>
                                     </div>
                                 </form>
                             </div>
@@ -104,6 +114,13 @@
         <!-- JS -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
-        <script src="js/vendor/bootstrao-datepicker.js"></script>
+        <script src="js/vendor/bootstrap-datepicker.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#event_date').datepicker({
+                    format: "dd/mm/yyyy"
+                });
+            });
+        </script>
     </body>
 </html>
