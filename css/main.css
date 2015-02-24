@@ -393,7 +393,7 @@ a {
 
 .footer {
     color: #fff;    
-    background-color: #669900;
+    background-color: #77b029;
     text-align: center;
 }
 
@@ -429,9 +429,11 @@ a {
 }
 
 .copyright {
-    color: #fff;
+    background-color: #669900;
+    color: #eee;
     padding-top: 25px;
     padding-bottom: 25px;
+
 }
 
 .modal-footer a {
