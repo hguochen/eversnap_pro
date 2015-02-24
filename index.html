@@ -12,14 +12,67 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            .search {
+                margin-top: 10%;
+            }
+            /*
+            .search .form-section {
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                padding: 10px;
+            }
+    
+            .search .form-section .avail-form {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .location, .date, .time {
+                padding-top: 5px;
+            }
+            */
+           .banner-optin {
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .banner-optin button {
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                padding: 13px 0 12px 0;
+                background: #669900;
+                border: none;
+                font-weight: bold;
+                border-radius: 0;
+                height: auto;
+            }
+            .banner-optin input[type="text"], .banner-optin text {
+                color: #333;
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 14px 20px;
+                display: block;
+                border-radius: 0;
+                height: auto;
+                background: #fff;
+            }
+            
+            .form-group {
+                margin-bottom: 0;
+            }
+        </style>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <!--
         <div class="nav">
             <div class="container-fluid">
                 <ul class="pull-left">
@@ -30,21 +83,98 @@
                     <li><a href="#">Login</a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class="fullscreen">
             <div class="jumbotron">
                 <div class="container-fluid">
+                    <div class="nav">
+                        <ul class="pull-left">
+                            <li><a href="#"><img src="img/logo.png" alt="" width="180" height="60"></a></li>
+                        </ul>
+                        <ul class="pull-right nav-list">
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
                     <h1 class="punchline">Hire an amazing photographer without hassle</h1>
                     <p>All rights and editing included.</p>
-                    <div class="event_input">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+
+                    <!--
+                    <div class="search">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="container form-section">
+                                            <form role="form" class="">
+                                                <div class="row">
+                                                <div class="col-md-3 location">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="location">Location</label>
+                                                        <input type="email" class="form-control" id="location" placeholder="Where?">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 date">
+                                                    <div class="form-group">
+                                                        <label for="event_date" class="sr-only">Event date</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control datepicker" id="event_date" placeholder="2/23/2015">
+                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 time">
+                                                    <div class="form-group">
+                                                        <label for="start_time" class="sr-only">Start time</label>
+                                                        <div class="input-group input-append bootstrap-timepicker">
+                                                            <input type="text" class="form-control" id="start_time" placeholder="Start time">
+                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 cta">
+                                                    <button type="button" class="btn btn-success btn-lg check-date" data-toggle="modal" data-target="#success">Check availability</button>
+                                                </div>                                             
+                                                </div>
+                                            </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cta">
-                        <button class="btn btn-success btn-lg check-date" data-toggle="modal" data-target="#success">Check availability</button>
+                -->
+                    <div class="search">
+                        <div class="container">
+                            <div class="row">
+                                <form id="avail-form" action="">
+                                    <div class="banner-optin">
+                                        <div class="row">
+                                            <div class="col-md-3 form-group location">
+                                                <label class="sr-only" for="location">Location</label>
+                                                <input type="text" class="form-control" id="location" placeholder="Where?">
+                                            </div>
+                                            <div class="form-group col-md-3 date">
+                                                <label for="event_date" class="sr-only">Event date</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control datepicker" id="event_date" placeholder="2/23/2015">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3 time">
+                                                <label for="start_time" class="sr-only">Start time</label>
+                                                <div class="input-group input-append bootstrap-timepicker">
+                                                    <input type="text" class="form-control" id="start_time" placeholder="Start time">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3 cta">
+                                                <button type="button" class="btn btn-success btn-lg check-date" data-toggle="modal" data-target="#success">Check availability</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,7 +369,7 @@
             </div>
         </footer>
         <!-- Modal for success-->
-        <div class="modal fade" id=success tabindex="-1" role="dialog" aria-labelledby="modallabel" aria-hidden="true">
+        <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="modallabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -249,7 +379,7 @@
                         <h4 class="modal-title" id="modallabel">Modal title</h4>
                     </div><!-- modal-header-->
                     <div class="modal-body">
-                        <h1>Congratulations. your slot is available!</h1>
+                        <h1>You got it! this slot is available.</h1>
                         <br>
                         <br>
                         <h4>Whats included?</h4>
@@ -305,6 +435,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
         <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap-datepicker.js"></script>
+        <script src="js/vendor/bootstrap-timepicker.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
@@ -345,6 +477,29 @@
         path.css("background-size", imgW + "px " + imgH + "px");
     });
 }
+            //date and time picker
+            $(document).ready(function(){
+                var nowTemp = new Date();
+                // set a now date instance
+                var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+                
+                var event_date = $('#event_date').datepicker({
+                  onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                  }
+                }).on('changeDate', function(ev) {
+                  if (ev.date.valueOf() > checkout.date.valueOf()) {
+                    var newDate = new Date(ev.date)
+                    newDate.setDate(newDate.getDate() + 1);
+                    checkout.setValue(newDate);
+                  }
+                  event_date.hide();
+                  $('#start_time').focus();
+                }).data('datepicker');
+
+                // timepicker module
+                $('#start_time').timepicker();
+            });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
