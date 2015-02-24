@@ -88,26 +88,6 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -302,9 +282,10 @@ textarea {
 html, body {
     height: 100%;
 }
-.fullscreen, .fullscreen .jumbotron {
+.fullscreen {
     width: 100%;
-    height: 95%;
+    height: 100%;
+    background-color: #f7f7f7;    
 }
 .jumbotron {
     background: url('../img/shutterstock_133672814.jpg') no-repeat center top;
@@ -312,7 +293,9 @@ html, body {
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
+    height: 92%;
     opacity: 0.9;
+    margin-bottom: 0;
 }
 .jumbotron p {
     color: #fff;
@@ -326,9 +309,13 @@ html, body {
     font-family: 'Shift', san-serif;
     text-align: center;
     padding-top: 150px;
-    padding-bottom: 30px;
 }
 
+.app {
+    height: 8%;
+    background:#fff no-repeat center top;
+    width: 100%;    
+}
 .cta {
     text-align: center;
 }
@@ -438,4 +425,8 @@ a {
 .check-date, .order {
     background-color: #669900;
     border: 0;
+}
+
+.downloads {
+    padding-top: 5px;
 }
