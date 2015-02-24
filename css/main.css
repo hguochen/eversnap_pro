@@ -13,7 +13,7 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.4;    
 }
 
 /*
@@ -281,6 +281,7 @@ textarea {
    ========================================================================== */
 html, body {
     height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 .fullscreen {
     width: 100%;
@@ -293,7 +294,7 @@ html, body {
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
-    height: 92%;
+    height: 80%;
     opacity: 0.9;
     margin-bottom: 0;
 }
@@ -306,15 +307,16 @@ html, body {
     color: #fff;
     font-size: 48px;
     font-weight: bold;
-    font-family: 'Shift', san-serif;
+    font-family: 'Shift', sans-serif;
     text-align: center;
     padding-top: 150px;
 }
 
 .app {
-    height: 8%;
-    background:#fff no-repeat center top;
-    width: 100%;    
+    height: 20%;
+    background-color: #efefef;
+    width: 100%;
+    font-family: 'Shift', sans-serif;  
 }
 .cta {
     text-align: center;
@@ -324,22 +326,9 @@ html, body {
     background-color: #f7f7f7;
 }
 
-.portfolio h3, .ph-team h3, .package h3, footer h3 {
-    font-family: 'Shift', san-serif;
-    font-size: 18px;
+.portfolio h3, .ph-team h3, .package h3, .press h3, footer h3 {
+    font-family: 'Shift', sans-serif;
     font-weight: bold;
-}
-
-.portfolio {
-    background-color: #efefef;
-    border-bottom: 1px solid #dbdbdb;
-}
-
-.portfolio p {
-    text-align: center;
-}
-
-.portfolio h3, .ph-team h3, .package h3, footer h3 {
     color: #393c3d;
     font-size: 24px;
     text-align: center;
@@ -347,8 +336,16 @@ html, body {
     padding-bottom: 30px;
 }
 
+.portfolio {
+    background-color: #f8f9fb;
+}
+
+.portfolio p {
+    text-align: center;
+}
+
 .ph-team {
-    background-color: #fff;
+    background-color: #f8f9fb;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -365,6 +362,18 @@ html, body {
     text-align: center;
 }
 
+.press {
+    background-color: #efefef;
+}
+
+.press h4 {
+    padding-top: 6px;
+    font-weight: 300;
+}
+
+.press img {
+    padding: 15px 20px;
+}
 a {
     color: #00b0ff;
 }
