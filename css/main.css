@@ -281,7 +281,8 @@ textarea {
    ========================================================================== */
 html, body {
     height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    /*font-family: 'Helvetica Neue', Helvetica, sans-serif;*/
+    font-family: 'Playfair Display', serif;
 }
 .fullscreen {
     width: 100%;
@@ -307,7 +308,8 @@ html, body {
     color: #fff;
     font-size: 48px;
     font-weight: bold;
-    font-family: 'Shift', sans-serif;
+    /*font-family: 'Shift', sans-serif;*/
+    font-family: inherit;
     text-align: center;
     padding-top: 4em;
 }
@@ -315,7 +317,7 @@ html, body {
 .app {
     height: 20%;
     width: 100%;
-    font-family: 'Shift', sans-serif;  
+    font-family: inherit;
 }
 .cta {
     text-align: center;
@@ -326,7 +328,7 @@ html, body {
 }
 
 .portfolio h3, .ph-team h3, .package h3, .press h3 {
-    font-family: 'Shift', sans-serif;
+    font-family: inherit;
     font-weight: bold;
     color: #393c3d;
     font-size: 24px;
