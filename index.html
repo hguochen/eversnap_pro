@@ -12,9 +12,11 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="js/vendor/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/datepicker.css">
         <link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stack.css">
         <link rel="stylesheet" href="css/main.css">
         <style>
             .search {
@@ -162,38 +164,44 @@
                     </div>
                     <div class="col-md-4">
                         <p>Kids Birthday</p>
-                        <div class="thumbnail">
-                            <img src="http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg" alt="">
+                        <div class="stack twisted text-center">
+                            <a class="fancybox" rel="kids" href="img/kids_birthday.jpg"><img src="img/kids_birthday.jpg" alt=""></a>
+                            <a class="fancybox fancybox-slides" rel="kids" href="img/conference.jpg"><img src="img/conference.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <p>Conference &amp; Company Events</p>
-                        <div class="thumbnail">
-                            <img src="http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg" alt="">
+                        <div class="stack twisted text-center">
+                            <a class="fancybox" rel="conference" href="img/conference.jpg"><img src="img/conference.jpg" alt=""></a>
+                            <a class="fancybox fancybox-slides" rel="conference" href="img/conference.jpg"><img src="img/kids_birthday.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <p>Wedding &amp; Engagements</p>
-                        <div class="thumbnail">
-                            <img src="http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg" alt="">
+                        <div class="stack twisted text-center">
+                            <a class="fancybox" rel="wedding" href="img/wedding.jpg"><img src="img/wedding.jpg" alt=""></a>
+                            <a class="fancybox fancybox-slides" rel="wedding" href="img/wedding.jpg"><img src="img/wedding.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <p>Portraits &amp; Headshots</p>
-                        <div class="thumbnail">
-                            <img src="http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg" alt="">
+                        <div class="stack twisted text-center">
+                            <a class="fancybox" rel="portrait" href="img/portraits.jpg"><img src="img/portraits.jpg" alt=""></a>
+                            <a class="fancybox fancybox-slides" rel="portrait" href="img/portraits.jpg"><img src="img/portraits.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <p>Special Events</p>
-                        <div class="thumbnail">
-                            <img src="http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg" alt="">
+                        <div class="stack twisted text-center">
+                            <a class="fancybox" rel="special" href="img/special_events.jpg"><img src="img/special_events.jpg" alt=""></a>
+                            <a class="fancybox fancybox-slides" rel="special" href="img/special_events.jpg"><img src="img/special_events.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <p>Real Estate</p>
-                        <div class="thumbnail">
-                            <img src="http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg" alt="">
+                        <div class="stack twisted text-center">
+                            <a class="fancybox" rel="estate" href="img/portraits.jpg"><img src="img/portraits.jpg" alt=""></a>
+                            <a class="fancybox fancybox-slides" rel="estate" href="img/portraits.jpg"><img src="img/portraits.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -403,6 +411,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
         <script src="js/vendor/bootstrap-datepicker.js"></script>
         <script src="js/vendor/bootstrap-timepicker.min.js"></script>
@@ -496,7 +505,13 @@
                 }); //end section
             }); //close out script
         </script>
-
+        
+        <script type="text/javascript">
+            // fancybox
+            $(document).ready(function() {
+                $(".fancybox").fancybox();
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
