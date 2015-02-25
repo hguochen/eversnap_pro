@@ -134,16 +134,25 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid app">
+            <section class="container-fluid app parallax" data-speed="6" data-type="background">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="downloads text-center">
-                            <h3>Don't want a photographer?</h3>
-                            <p>Share your photos easily with our app packages.</p>
+                    <div class="col-md-7">
+                        <a href="#">
+                            <div class="downloads pull-right">
+                                <h3>Don't want a photographer?</h3>
+                                <p><a href="#">Share your photos easily with our app packages.</a></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="direction-right">
+                            <a href="#">
+                                <span class="pull-left"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="portfolio">
             <div class="container">
@@ -466,6 +475,32 @@
                 // timepicker module
                 $('#start_time').timepicker();
             });
+        </script>
+
+        <script>
+            //parallax background
+            // cater for IE
+            document.createElement("section");
+            $(document).ready(function() {
+                //cache window object
+                $window = $(window);
+
+                $('section[data-type="background"]').each(function() {
+                    //declare the variable to affect the defined data-type
+                    var $scroll = $(this);
+
+                    $(window).scroll(function() {
+                        //negative values because we're scrolling upwards
+                        var yPos = -($window.scrollTop() / $scroll.data('speed'));
+
+                        //background position
+                        var coords = '50%' + yPos + 'px';
+
+                        //move the background
+                        $scroll.css({backgroundPosition: coords});
+                    }); // end window scroll
+                }); //end section
+            }); //close out script
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
