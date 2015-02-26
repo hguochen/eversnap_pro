@@ -263,7 +263,9 @@ textarea {
 .nav {
     padding: 2em 8em 0 0;
 }
-
+.navbar-nav {
+    padding-top: 2.3em;
+}
 .navbar-nav.nav>li>a {
     color: #eee;
 }
@@ -327,6 +329,42 @@ html, body {
     text-align: center;
     left: 42.8%;
     padding-top: 25px;
+}
+
+.search {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -585px;
+}
+
+.banner-optin {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.banner-optin button {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 13px 0 12px 0;
+    background: #669900;
+    border: none;
+    font-weight: bold;
+    border-radius: 2px;
+    height: auto;
+}
+.banner-optin input[type="text"], .banner-optin text {
+    color: #333;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 14px 20px;
+    display: block;
+    border-radius: 0;
+    height: auto;
+    background: #fff;
 }
 
 .header {
@@ -483,7 +521,7 @@ a {
 
 .downloads {
     padding: 3em 0;
-    color: #000;
+    color: #000;    
 }
 .downloads a{
     color: #000;
@@ -561,21 +599,87 @@ a {
    Responsiveness
    ========================================================================== */
 /* For medium width less than 768px */
-@media(max-width: 767px) {
+@media(max-width:549px) {
+    .jumbotron {
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+    }
+    .jumbotron .punchline {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color: #fff;
+        margin-left: -185px;
+    }
+    .punchline h1 {
+        font-size: 18px;
+    }
+    .punchline p {
+        font-size: 16px;
+    }
+    .logo a {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        text-align: center;
+        margin-left: -90px;
+    }
+    .search {
+        top: 55%;
+        width: 100%;
+        margin-left: -237px;
+    }
+
+    .downloads h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .downloads p {
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 550px) and (max-width: 767px) {
+    .jumbotron {
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+    }
     /* Logo */
     .collapse {
         border: 0;
     }
-    .logo img {
-        width: 120px;
-        height: 40px;
-        text-align: center;
 
+    .logo a {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        text-align: center;
+        margin-left: -90px;
+    }
+    .jumbotron .punchline {        
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color: #fff;
+        margin-left: -267.5px;
+    }
+    .punchline h1 {
+        font-size: 26px;
+    }
+    .punchline p {
+        font-size: 16px;
     }
     /* Check availiability banner */
     .search {
-        height: 50px;
+        top: 55%;
+        width: 80%;
+        margin-left: -275px;
     }
+    
     /* Footer */
     .footer-section div {
         padding-top: 1em;
@@ -585,12 +689,72 @@ a {
     }
 }
 /* For medium width more than 768px */
-@media(min-width: 768px) {
+@media(min-width: 768px) and (max-width: 991px) {
+    .jumbotron {
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+    }
+    .search {
+        width: 80%;
+        margin-left: -335px;
+    }
+    .cta button {
+        font-size: 15px;
+    }
+    .nav a {
+        font-size: 14px;
+    }
+    .jumbotron .punchline {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color: #fff;
+        margin-left: -308.5px;
+    }
+    .punchline h1 {
+        font-size: 30px;
+    }
+    .punchline p {
+        font-size: 16px;
+    }
+
 }
 /* For medium width more than 992px */
-@media(min-width: 992px) {
+@media(min-width: 992px) and (max-width: 1199px) {
+    .jumbotron {
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+    }
+    .search {
+        width: 80%;
+        margin-left: -430px;
+    }
+    .jumbotron .punchline {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color: #fff;
+        margin-left: -370px;
+    }
+    .punchline h1 {
+        font-size: 36px;
+    }
+    .punchline p {
+        font-size: 18px;
+    }
+
 }
 /* For medium width more than 1200px */
 @media(min-width: 1200px) {
-
+    .jumbotron .punchline {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color: #fff;
+        margin-left: -493.5px;
+    }
 }
