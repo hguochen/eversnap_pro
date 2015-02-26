@@ -583,18 +583,47 @@ a {
    ========================================================================== */
 
 .figure-caption-title {
+    font-family: 'Helvetica Neue', Helvetica;
     color: #1c1c1c;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: none;
     text-align: center;
     padding-top: 0;
 }
 .figure-caption-title span {
+    font-family: 'Helvetica Neue', Helvetica;
     font-weight: 200;
     text-align: left;
     font-size: 16px;
 }
+.figure-caption-title p {
+    font-weight: 300;
+    padding: 1em 0 0 0;
+    font-size: 14px;
+}
+/* arrow down */
+.leads a {
+    color: #77b029;
+}
+.leads a:hover {
+    color: #669900;
+}
+.glyphicon-chevron-down {
+    font-size: 3em;
+}
 
+/* Check avail panel */
+.panel a {
+    text-decoration: none;
+    color: #000;
+}
+.panel a:hover {
+    color: #0000ff;
+}
+.modal-footer {
+    
+    text-align:center;
+}
 /* ==========================================================================
    Responsiveness
    ========================================================================== */
