@@ -298,22 +298,38 @@ html, body {
     height: 80%;
     opacity: 0.9;
     margin-bottom: 0;
+    position: relative;
+
 }
-.jumbotron p {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-}
+
 .jumbotron .punchline {
+    position: absolute;
+    top: 30%;
+    left: 50%;
     color: #fff;
+    margin-left: -493.5px;
+}
+
+.punchline h1 {
     font-size: 48px;
     font-weight: bold;
     /*font-family: 'Shift', sans-serif;*/
     font-family: inherit;
-    text-align: center;
-    padding-top: 4em;
 }
 
+.punchline p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    left: 42.8%;
+    padding-top: 25px;
+}
+
+.header {
+    position: absolute;
+    top: 30%;
+    left: 24.30%;
+}
 .app {
     height: 20%;
     width: 100%;
@@ -535,4 +551,24 @@ a {
     font-weight: 200;
     text-align: left;
     font-size: 16px;
+}
+
+/* ==========================================================================
+   Responsiveness
+   ========================================================================== */
+/* For medium width less than 768px */
+@media(max-width: 767px) {
+
+}
+/* For medium width more than 768px */
+@media(min-width: 768px) {
+
+}
+/* For medium width more than 992px */
+@media(min-width: 992px) {
+
+}
+/* For medium width more than 1200px */
+@media(min-width: 1200px) {
+
 }
