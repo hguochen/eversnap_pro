@@ -380,7 +380,21 @@ html, body {
 .cta {
     text-align: center;
 }
-
+.contact {
+    font-family: 'Playfair Display', serif;
+    padding-top: 1em;
+    text-align: center;
+}
+.contact span {
+    color: #eee;
+}
+.contact a {
+    text-decoration: none;
+}
+.banner-addon img{
+    display: inline-block;
+    float: left;
+}
 .portfolio, .ph-team, .package {
     background-color: #f7f7f7;
 }
@@ -660,7 +674,10 @@ a {
         width: 100%;
         margin-left: -237px;
     }
-
+    .banner-addon img{
+        display: none;
+        float: left;
+    }
     .downloads h3 {
         font-weight: 500;
         font-size: 20px;
@@ -708,7 +725,10 @@ a {
         width: 80%;
         margin-left: -275px;
     }
-    
+    .banner-addon img{
+        display: none;
+        float: left;
+    }
     /* Footer */
     .footer-section div {
         padding-top: 1em;
