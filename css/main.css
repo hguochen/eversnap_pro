@@ -377,6 +377,9 @@ html, body {
     width: 100%;
     font-family: inherit;
 }
+.app-phones {
+    position: relative;
+}
 .cta {
     text-align: center;
 }
@@ -465,7 +468,7 @@ a {
 }
 
 .app p {
-    text-align: center;
+    text-align: left;
 }
 
 .footer {
@@ -535,7 +538,9 @@ a {
 
 .downloads {
     padding: 3em 0;
-    color: #000;    
+    color: #000;  
+    display: inline-block;  
+    float:left;
 }
 .downloads a{
     color: #000;
@@ -557,7 +562,8 @@ a {
 }
 
 .direction-right {
-    padding: 5em 0;
+    padding: 5em 0 5em 1em;
+    display: inline-block;
 }
 .direction-right a {
     color: #545454;
@@ -803,6 +809,12 @@ a {
     .downloads p {
         font-size: 12px;
     }
+    .app-phones {
+        display: none;
+    }
+    .direction-right {
+        display: none;
+    }
 }
 
 @media(min-width: 550px) and (max-width: 767px) {
@@ -854,6 +866,12 @@ a {
     .footer-section li {
         padding: 0.2em 0;
     }
+    .app-phones {
+        display: none;
+    }
+    .direction-right {
+        display: none;
+    }
 }
 /* For medium width more than 768px */
 @media(min-width: 768px) and (max-width: 991px) {
@@ -886,6 +904,12 @@ a {
     .punchline p {
         font-size: 16px;
     }
+    .app-phones {
+        padding-top: 1.5em;
+    }
+    .direction-right {
+        display: none;
+    }
 
 }
 /* For medium width more than 992px */
@@ -913,7 +937,12 @@ a {
     .punchline p {
         font-size: 18px;
     }
-
+    .app-phones {
+        padding-top: 1.5em;
+    }
+    .direction-right {
+        display: none;
+    }
 }
 /* For medium width more than 1200px */
 @media(min-width: 1200px) {
@@ -923,5 +952,8 @@ a {
         left: 50%;
         color: #fff;
         margin-left: -493.5px;
+    }
+    .app-phones {
+        padding-top: 1.5em;
     }
 }
