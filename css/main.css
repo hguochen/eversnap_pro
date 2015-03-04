@@ -577,7 +577,7 @@ a {
    Parallax
    ========================================================================== */
 .parallax {
-    background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url(../img/eversnap_magazine_article.png) 50% 0;
+    background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url(../img/app_packages_background.jpg) repeat 50% 0;
     background-attachment: fixed;
     margin: 0 auto;
     width: 100%;
